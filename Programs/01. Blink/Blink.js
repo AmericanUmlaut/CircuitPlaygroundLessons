@@ -1,0 +1,10 @@
+forever(function () {
+    light.setPixelColor(1, 0xff0000)
+    pause(500)
+    light.setPixelColor(1, 0x000000)
+    pause(500)
+    pins.A0.digitalWrite(true)
+    pause(500)
+    pins.A0.digitalWrite(false)
+    pause(500)
+})
